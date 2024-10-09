@@ -73,7 +73,7 @@ void exercise_4(int x)
     if (x == 0) 
     {
         // Denominator is 0 - Cannot proceed
-        std::cout << "Dividing by zero is not supported.\n";
+        std::cout << "Dividing by zero is not supported\n";
     } 
     else 
     {
