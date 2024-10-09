@@ -13,6 +13,7 @@ Can write on two lines
 void exercise_1()
 {
     // Your code here
+    std::cout << "My first C-program\nCan write on two lines\n";
 }
 
 /*
@@ -27,6 +28,7 @@ Area of the triangle: 10.000000
 void exercise_2(double base, double height)
 {
     // Your code here
+    std::cout << "Area of the triangle: " << base * height / 2 << "\n";
 }
 
 /*
@@ -36,10 +38,10 @@ Use a reference table for operator precedence if you are not sure about the orde
 void exercise_3()
 {
     // Write your answers here
-    int answer1 = 0;
-    int answer2 = 0;
+    int answer1 = 11;
+    int answer2 = 1;
     int answer3 = 0;
-    int answer4 = 0;
+    int answer4 = 1;
 
     // The print statements below will all print 1 if your answers are correct
     std::cout << (answer1 == (-3 + 4 * 5 - 6)) << std::endl;
@@ -65,6 +67,17 @@ Hint: use the '?' operator. You can define the function in one line.
 void exercise_4(int x)
 {
     // Your code here
+
+    if (x == 0) 
+    {
+        // Denominator is 0 - Cannot proceed
+        std::cout << "Dividing by zero is not supported.\n";
+    } 
+    else 
+    {
+        // Any other denominator, exlcuding 0
+        std::cout << "10 divided by " << x << " is " << 10 / x << "\n";
+    }
 }
 
 /*
@@ -74,11 +87,11 @@ Use a reference table for operator precedence if you are not sure about the orde
 void exercise_5()
 {
     // Write your answers here
-    int answer1 = 0;
-    int answer2 = 0;
-    int answer3 = 0;
-    int answer4 = 0;
-    int answer5 = 0;
+    int answer1 = 10;
+    int answer2 = 40;
+    int answer3 = 4;
+    int answer4 = 4;
+    int answer5 = 1;
 
     int x, y, z;
     x = 2;
@@ -103,13 +116,13 @@ Use a reference table for operator precedence if you are not sure about the orde
 void exercise_6()
 {
     // Write your answers here
-    int answer1 = 0;
-    int answer2 = 0;
-    int answer3 = 0;
+    int answer1 = 3;
+    int answer2 = 2;
+    int answer3 = 4;
 
     int x, y, z;
-    x = y = z = 1;
-    x += y += x;
+    x = y = z = 1; // x = y = z = 1
+    x += y += x; // y = y + x = 2 || x = x + y = 1 + 2 = 3 || y = 2 and x = 3
 
     // The print statements below will print 1 if your answers are correct
     std::cout << (answer1 == ((x < y) ? y : x)) << std::endl;
