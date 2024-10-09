@@ -28,7 +28,9 @@ Area of the triangle: 10.000000
 void exercise_2(double base, double height)
 {
     // Your code here
-    std::cout << "Area of the triangle: " << base * height / 2 << "\n";
+    float area = 1.0;
+    area = base * height / 2;
+    std::cout << "Area of the triangle: " << std::fixed << std::setprecision(6) << area << "\n";
 }
 
 /*
